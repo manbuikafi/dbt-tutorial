@@ -1,0 +1,12 @@
+jaffle_shop:
+  target: prod
+  outputs:
+    prod:
+      type: bigquery
+      method: oauth
+      project: kf-data-prod
+      dataset: dev_portfolio_monitoring_dashboard
+      location: asia-northeast1
+      threads: 1
+      timeout_seconds: 300
+      priority: interactive
